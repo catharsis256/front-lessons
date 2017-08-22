@@ -3,6 +3,7 @@
 <head>
     <title>Центр Компьютерного обучения Специалист</title>
     <meta charset="UTF-8">
+    <base target="_blank"/>
 </head>
 <body>
 <header>
@@ -10,12 +11,12 @@
     <nav>
         <blockquote>
             <p>
-                Новости Центра (файл news.html)<br>
-                Новости сертифицированного обучения (файл certificat.html)<br>
-                События (файл events.html)<br>
-                Новости сервера Online тестирования и сертификации (файл test.html)<br>
-                Новости дистанционного обучения (файл distance.html)<br>
-                Где находится офис? (нижняя часть документа)<br>
+                <a href="content/news.html">Новости Центра (файл news.html)</a><br>
+                <a href="content/certificat.html">Новости сертифицированного обучения (файл certificat.html)</a><br>
+                <a href="content/events.html">События (файл events.html)</a><br>
+                <a href="content/test.html">Новости сервера Online тестирования и сертификации (файл test.html)</a><br>
+                <a href="content/distance.html">Новости дистанционного обучения (файл distance.html)</a><br>
+                <a href="#bottom-address" target="_self">Где находится офис? (нижняя часть документа)</a><br>
             </p>
         </blockquote>
     </nav>
@@ -58,7 +59,7 @@
     </article>
     <aside>
         <p align="right">
-            Отзывы о сайте направляйте веб-мастеру: webmaster@specialist.ru
+            Отзывы о сайте направляйте веб-мастеру: <a href="mailto:webmaster@specialist.ru">webmaster@specialist.ru</a>
         </p>
     </aside>
 </section>
@@ -69,14 +70,16 @@
             PHP | JavaScript | Другие
         </p>
     </div>
-    <hr width="90%">
-    <div style="padding-left: 5%; padding-right: 5%">
-        <p>
+    <hr width="95%">
+    <!--<div style="padding-left: 5%; padding-right: 5%">-->
+    <blockquote>
+        <p id="bottom-address">
             &copy; 1991-2015 Центр компьютерного обучения "Специалист"&trade; при МГТУ им. Н.Э.Баумана<br>
             Адрес главного офиса: г. Москва, Госпитальный переулок, д. 4/6, корпус МГТУ им. Баумана <em>&laquo;Стилобат&raquo;</em>,
             2-й этаж.
         </p>
-    </div>
+    </blockquote>
+    <!--</div>-->
 </footer>
 </body>
 </html>
