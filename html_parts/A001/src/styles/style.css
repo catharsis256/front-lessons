@@ -1,0 +1,39 @@
+* {
+    background: cornsilk;
+    color: darkslateblue;
+}
+
+nav a:link {
+    color: lightseagreen;
+}
+
+nav a:visited {
+    color: darkslateblue;
+}
+
+nav a:hover {
+    color: red;
+    background: yellow;
+}
+
+section a:link {
+    color: cadetblue;
+}
+
+section a:visited {
+    color: aquamarine;
+
+}
+
+section a:hover {
+    color: yellow;
+    background: red;
+}
+
+article > p:first-child {
+    color : blueviolet;
+}
+
+header h3 {
+    color: darkgreen;
+}
