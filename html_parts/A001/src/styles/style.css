@@ -40,6 +40,10 @@ nav a:hover {
     background: yellow;
 }
 
+nav li {
+    list-style-type: none;
+}
+
 section a:link {
     color: cadetblue;
 }
