@@ -7,6 +7,17 @@ section, article {
     font: large "Lucida Sans Unicode";
 }
 
+aside img {
+    display: block;
+    margin: 0 auto;
+}
+
+header img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
 header h1, header h3 {
     font: bold x-large "Comic Sans MS";
     text-align: center;
