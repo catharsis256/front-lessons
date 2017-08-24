@@ -3,12 +3,25 @@
     color: darkslateblue;
 }
 
+section, article {
+    font: large "Lucida Sans Unicode";
+}
+
+header h1, header h3 {
+    font: bold x-large "Comic Sans MS";
+    text-align: center;
+}
+
+header > h1 {
+    text-decoration: overline underline;
+}
+
 nav a:link {
     color: lightseagreen;
 }
 
 nav a:visited {
-    color: darkslateblue;
+    color: darkorchid;
 }
 
 nav a:hover {
@@ -30,10 +43,23 @@ section a:hover {
     background: red;
 }
 
-article > p:first-child {
-    color : blueviolet;
+article > p:first-letter {
+    color : red;
+}
+
+article > p {
+    text-indent: 2%;
+}
+
+article p {
+    line-height: 140%;
 }
 
 header h3 {
-    color: darkgreen;
+    color: greenyellow;
+    background: url("../resources/gb_flag.jpg") no-repeat top;
+}
+
+article > p:last-child {
+    text-align: justify;
 }
