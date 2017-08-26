@@ -81,3 +81,10 @@ footer > div:first-child iframe {
     width: 25%;
     height: 10%;
 }
+
+footer > div:last-child {
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+}
