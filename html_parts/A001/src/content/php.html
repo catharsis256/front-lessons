@@ -5,54 +5,89 @@
     <meta charset="UTF-8"/>
     <style>
         table {
-            width: 80%;
-
+            width: 60%;
+            border-spacing: 0;
+            border-collapse: collapse;
         }
+
+        td, th, table {
+            border: 1px solid black;
+        }
+
+        th.name {
+            width: 85%;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+
+        tfoot td:first-child {
+            padding-right: 10%;
+        }
+
+        tfoot td:last-child, tbody td:last-child,tfoot td:first-child {
+            text-align: right;
+        }
+
+        tfoot td {
+            font: bold medium Times;
+        }
+
+        caption {
+            font: bold x-large Times;
+        }
+
+        .emph-row {
+            background-color: gray;
+        }
+
+        tfoot > tr {
+            background-color: darkgray;
+        }
+
     </style>
 </head>
 <body>
 <section>
-    <table>
-        <caption>Курсы PHP</caption>
-        <thead>
-        <tr>
-            <th rowspan="3">Название</th>
-            <th>Ак.часов</th>
-        </tr>
-        </thead>
-        <tfoot>
-        <tr>
-            <td rowspan="3">Всего Ак. часов</td>
-            <td>96</td>
-        </tr>
-        </tfoot>
-        <tbody>
-        <tr>
-            <td>PHP.</td>
-            <td>Уровень 1.</td>
-            <td>Основы создания сайтов</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>PHP.</td>
-            <td>Уровень 2.</td>
-            <td>Разработка web-сайтов и взаимодействие с MySQL</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>PHP.</td>
-            <td>Уровень 3.</td>
-            <td>Профессиональная разработка на PHP5</td>
-            <td>24</td>
-        </tr>
-        <tr>
-            <td>PHP.</td>
-            <td>Уровень 4.</td>
-            <td>Проектирование и разработка сложных веб-проектов на РНР 5</td>
-            <td>24</td>
-        </tr>
-        </tbody>
-    </table>
+    <div style="overflow-x: auto">
+        <table>
+            <caption>Курсы PHP</caption>
+            <thead>
+            <tr>
+                <th class="name">Название</th>
+                <th class="hours">Ак.часов</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <td>Всего Ак. часов</td>
+                <td>96</td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <tr class="emph-row">
+                <td>PHP. Уровень 1. Основы создания сайтов</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>PHP. Уровень 2. Разработка web-сайтов и взаимодействие с MySQL</td>
+                <td>24</td>
+            </tr>
+            <tr class="emph-row">
+                <td>PHP. Уровень 3. Профессиональная разработка на PHP5</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>PHP. Уровень 4. Проектирование и разработка сложных веб-проектов на РНР 5</td>
+                <td>24</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </section>
 </body>
 </html>	
