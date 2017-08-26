@@ -6,16 +6,14 @@
 section, article {
     font: large "Lucida Sans Unicode";
 }
-
-aside img {
-    display: block;
-    margin: 0 auto;
+aside > div {
+    text-align: center;
 }
 
 header img {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
 }
 
 header h1, header h3 {
@@ -72,9 +70,14 @@ article p {
 
 header h3 {
     color: greenyellow;
-    background: url("../resources/gb_flag.jpg") no-repeat top;
+    background: url("../A001/resources/gb_flag.jpg") no-repeat top;
 }
 
 article > p:last-child {
     text-align: justify;
+}
+
+footer > div:first-child iframe {
+    width: 25%;
+    height: 10%;
 }

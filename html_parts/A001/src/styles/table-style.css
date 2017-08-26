@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td, th, table {
+    border: 1px solid black;
+}
+
+th.name {
+    width: 85%;
+}
+
+th {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+
+tfoot td:first-child {
+    padding-right: 10%;
+}
+
+tfoot td:last-child, tbody td:last-child,tfoot td:first-child {
+    text-align: right;
+}
+
+tfoot td {
+    font: bold medium Times;
+}
+
+caption {
+    font: bold x-large Times;
+}
+
+.emphasize-row {
+    background-color: dimgrey;
+}
+
+tfoot > tr {
+    background-color: darkgray;
+}
