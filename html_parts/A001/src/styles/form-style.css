@@ -1,0 +1,26 @@
+.simple-form {
+    border: 3px dashed brown;
+    float: left;
+}
+
+.simple-title {
+    border: 3px solid green;
+    padding-left: 3%;
+}
+
+.input-field {
+    /*border: 3px solid brown;*/
+    float: right;
+}
+
+.text-field {
+    border: 3px solid blueviolet;
+    float: left;
+}
+
+.text-input-include-label-field {
+    border: 3px solid aquamarine;
+    width: 100%;
+    /*float: left;*/
+    clear: left;
+}

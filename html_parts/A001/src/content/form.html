@@ -3,84 +3,93 @@
 	<head>
 		<title>Форма обратной связи</title>
 		<meta charset="UTF-8"/>
+        <link rel="stylesheet" href="../styles/form-style.css" />
 	</head>
 	<body>
         <section>
-        <h1>Давайте познакомимся</h1>
-            <!-- Начало формы -->
-            <form action="/">
-                <fieldset>
-                    <legend>Основная информация</legend>
-                    <div>
-                        <label for="name">Ваше имя: </label>
-                        <!-- Текстовое поле -->
-                        <input id="name" type="text" name="name" title="ваше имя" value="Иван" />
-                    </div>
+            <div class="simple-form">
+                <div class="simple-title">
+                    <h1>Давайте познакомимся</h1>
+                </div>
+                <!-- Начало формы -->
+                <form action="/">
+                    <fieldset>
+                        <legend>Основная информация</legend>
+                        <div class="text-input-include-label-field">
+                            <div class="text-field">
+                                <label for="name">Ваше имя: </label>
+                            </div>
+                            <!-- Текстовое поле -->
+                            <div class="input-field">
+                                <input id="name" type="text" name="name" title="ваше имя" value="Иван" />
+                            </div>
+                        </div>
 
+                        <div class="text-input-include-label-field">
+                            <label for="surname">Ваша фамилия: </label>
+                            <!-- Текстовое поле -->
+                            <input id="surname" type="text" name="surname" title="ваша фамилия" value="Иванов" />
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Дополнительная информация</legend>
+                        <div>
+                            <label for="sex">Кто вы? </label>
+                            <!-- Радио кнопки -->
+                            <span id="sex" title="ваш пол">
+                                <input id="sex_man" type="radio" name="sex" value="man" />
+                                <label for="sex_man">мужчина</label>
+                                <input id="sex_woman" type="radio" name="sex" value="woman" />
+                                <label for="sex_woman">женщина</label>
+                                <input id="unknown" type="radio" name="sex" value="unknown" checked />
+                                <label for="unknown">не скажу</label>
+                            </span>
+                        </div>
+                        <div>
+                            <label for="occupation">Чем занимаетесь?</label>
+                            <!-- Выпадающий список -->
+                            <select id="occupation" name="occupation" title="род занятий">
+                                <optgroup label="Учащийся">
+                                    <option value="pupil">школьник</option>
+                                    <option value="student">студент</option>
+                                </optgroup>
+                                <optgroup label="Работник">
+                                    <option value="unemployed" selected>безработный</option>
+                                    <option value="labour">рабочий класс</option>
+                                    <option value="manager">офисный планктон</option>
+                                </optgroup>
+                                <optgroup label="Другое">
+                                    <option value="creative">креативный класс</option>
+                                    <option value="intelligentsia">интеллигент</option>
+                                    <option value="oligarch">олигарх</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="about-me">О себе:</label><br/>
+                            <!-- Текст -->
+                            <textarea id="about-me" title="о себе" name="about-me"
+                                      cols="25" rows="5" maxlength="255">Напишите коротко о себе</textarea>
+                        </div>
+                        <div>
+                            <label for="steal-records">Я не буду воровать записи курсов</label>
+                            <!-- Флажок -->
+                            <input type="checkbox" name="steal-records" id="steal-records"/>
+                        </div>
+                    </fieldset>
                     <div>
-                        <label for="surname">Ваша фамилия: </label>
-                        <!-- Текстовое поле -->
-                        <input id="surname" type="text" name="surname" title="ваша фамилия" value="Иванов" />
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Дополнительная информация</legend>
-                    <div>
-                        <label for="sex">Кто вы? </label>
-                        <!-- Радио кнопки -->
-                        <span id="sex" title="ваш пол">
-                            <input id="sex_man" type="radio" name="sex" value="man" />
-                            <label for="sex_man">мужчина</label>
-                            <input id="sex_woman" type="radio" name="sex" value="woman" />
-                            <label for="sex_woman">женщина</label>
-                            <input id="unknown" type="radio" name="sex" value="unknown" checked />
-                            <label for="unknown">не скажу</label>
+                        <span>
+                            <!-- Кнопка для отправки формы -->
+                            <input type="submit" value="Послать отзыв" />
+                        </span>
+                        <span>
+                            <!-- Кнопка для очистки формы -->
+                            <input type="reset" value="Очистить форму" />
                         </span>
                     </div>
-                    <div>
-                        <label for="occupation">Чем занимаетесь?</label>
-                        <!-- Выпадающий список -->
-                        <select id="occupation" name="occupation" title="род занятий">
-                            <optgroup label="Учащийся">
-                                <option value="pupil">школьник</option>
-                                <option value="student">студент</option>
-                            </optgroup>
-                            <optgroup label="Работник">
-                                <option value="unemployed" selected>безработный</option>
-                                <option value="labour">рабочий класс</option>
-                                <option value="manager">офисный планктон</option>
-                            </optgroup>
-                            <optgroup label="Другое">
-                                <option value="creative">креативный класс</option>
-                                <option value="intelligentsia">интеллигент</option>
-                                <option value="oligarch">олигарх</option>
-                            </optgroup>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="about-me">О себе:</label><br/>
-                        <!-- Текст -->
-                        <textarea id="about-me" title="о себе" name="about-me"
-                                  cols="25" rows="5" maxlength="255">Напишите коротко о себе</textarea>
-                    </div>
-                    <div>
-                        <label for="steal-records">Я не буду воровать записи курсов</label>
-                        <!-- Флажок -->
-                        <input type="checkbox" name="steal-records" id="steal-records"/>
-                    </div>
-                </fieldset>
-                <div>
-                    <span>
-                        <!-- Кнопка для отправки формы -->
-                        <input type="submit" value="Послать отзыв" />
-                    </span>
-                    <span>
-                        <!-- Кнопка для очистки формы -->
-                        <input type="reset" value="Очистить форму" />
-                    </span>
-                </div>
-            <!-- Конец формы -->
-            </form>
+                <!-- Конец формы -->
+                </form>
+            </div>
         </section>
 	</body>
 </html>
