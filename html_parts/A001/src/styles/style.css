@@ -6,8 +6,11 @@
 section, article {
     font: large "Lucida Sans Unicode";
 }
-aside > div {
-    text-align: center;
+
+aside div {
+    width: 468px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header img {
@@ -70,7 +73,7 @@ article p {
 
 header h3 {
     color: greenyellow;
-    background: url("../A001/resources/gb_flag.jpg") no-repeat top;
+    background: url("../resources/gb_flag.jpg") no-repeat top;
 }
 
 article > p:last-child {
@@ -78,13 +81,14 @@ article > p:last-child {
 }
 
 footer > div:first-child iframe {
-    width: 25%;
-    height: 10%;
+    width: 810px;
+    height: 170px;
+
+    border: 3px none black;
+
 }
 
 footer > div:last-child {
-    display: block;
     padding-left: 5%;
-    padding-right: 5%;
-    width: 90%;
+
 }
