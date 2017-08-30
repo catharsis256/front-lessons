@@ -5,18 +5,18 @@
 		<meta charset="UTF-8"/>
         <link rel="stylesheet" href="../styles/form-style.css" />
 	</head>
-	<body>
+    <body>
         <section>
             <div class="simple-form">
-                <div class="simple-title">
-                    <h1>Давайте познакомимся</h1>
+                <div class="simple-title text-headline">
+                    Давайте познакомимся
                 </div>
                 <!-- Начало формы -->
                 <form action="/">
                     <fieldset>
                         <legend>Основная информация</legend>
-                        <div class="text-input-include-label-field">
-                            <div class="text-field">
+                        <div class="universal-input-field">
+                            <div class="text-field text-description">
                                 <label for="name">Ваше имя: </label>
                             </div>
                             <!-- Текстовое поле -->
@@ -24,54 +24,69 @@
                                 <input id="name" type="text" name="name" title="ваше имя" value="Иван" />
                             </div>
                         </div>
-
-                        <div class="text-input-include-label-field">
-                            <label for="surname">Ваша фамилия: </label>
+                        <div class="universal-input-field">
+                            <span class="text-field text-description">
+                                <label for="surname">Ваша фамилия: </label>
+                            </span>
                             <!-- Текстовое поле -->
-                            <input id="surname" type="text" name="surname" title="ваша фамилия" value="Иванов" />
+                            <div class="input-field">
+                                <input id="surname" type="text" name="surname" title="ваша фамилия" value="Иванов" />
+                            </div>
                         </div>
                     </fieldset>
                     <fieldset>
                         <legend>Дополнительная информация</legend>
-                        <div>
-                            <label for="sex">Кто вы? </label>
+                        <div class="universal-input-field">
+                            <div class="text-field text-description">
+                                <label for="sex">Кто вы? </label>
+                            </div>
                             <!-- Радио кнопки -->
-                            <span id="sex" title="ваш пол">
-                                <input id="sex_man" type="radio" name="sex" value="man" />
-                                <label for="sex_man">мужчина</label>
-                                <input id="sex_woman" type="radio" name="sex" value="woman" />
-                                <label for="sex_woman">женщина</label>
-                                <input id="unknown" type="radio" name="sex" value="unknown" checked />
-                                <label for="unknown">не скажу</label>
-                            </span>
+                            <div class="input-field">
+                                <span id="sex" title="ваш пол">
+                                  <input id="sex_man" type="radio" name="sex" value="man" />
+                                  <label for="sex_man">мужчина</label>
+                                  <input id="sex_woman" type="radio" name="sex" value="woman" />
+                                  <label for="sex_woman">женщина</label>
+                                  <input id="unknown" type="radio" name="sex" value="unknown" checked />
+                                  <label for="unknown">не скажу</label>
+                                </span>
+                            </div>
                         </div>
-                        <div>
-                            <label for="occupation">Чем занимаетесь?</label>
+                        <div class="universal-input-field">
+                            <div class="text-field text-description">
+                                <label for="occupation">Чем занимаетесь?</label>
+                            </div>
                             <!-- Выпадающий список -->
-                            <select id="occupation" name="occupation" title="род занятий">
-                                <optgroup label="Учащийся">
-                                    <option value="pupil">школьник</option>
-                                    <option value="student">студент</option>
-                                </optgroup>
-                                <optgroup label="Работник">
-                                    <option value="unemployed" selected>безработный</option>
-                                    <option value="labour">рабочий класс</option>
-                                    <option value="manager">офисный планктон</option>
-                                </optgroup>
-                                <optgroup label="Другое">
-                                    <option value="creative">креативный класс</option>
-                                    <option value="intelligentsia">интеллигент</option>
-                                    <option value="oligarch">олигарх</option>
-                                </optgroup>
-                            </select>
+                            <div class="input-field">
+                                <select id="occupation" name="occupation" title="род занятий">
+                                    <optgroup label="Учащийся">
+                                        <option value="pupil">школьник</option>
+                                        <option value="student">студент</option>
+                                    </optgroup>
+                                    <optgroup label="Работник">
+                                        <option value="unemployed" selected>безработный</option>
+                                        <option value="labour">рабочий класс</option>
+                                        <option value="manager">офисный планктон</option>
+                                    </optgroup>
+                                    <optgroup label="Другое">
+                                        <option value="creative">креативный класс</option>
+                                        <option value="intelligentsia">интеллигент</option>
+                                        <option value="oligarch">олигарх</option>
+                                    </optgroup>
+                                </select>
+                            </div>
                         </div>
-                        <div>
-                            <label for="about-me">О себе:</label><br/>
+                        <div class="universal-input-field">
+                            <div class="text-field text-description">
+                                <label for="about-me">О себе:</label>
+                            </div>
                             <!-- Текст -->
+                            <div class="input-field wild-input-field">
                             <textarea id="about-me" title="о себе" name="about-me"
                                       cols="25" rows="5" maxlength="255">Напишите коротко о себе</textarea>
+                            </div>
                         </div>
-                        <div>
+                        <div class="universal-input-field">
                             <label for="steal-records">Я не буду воровать записи курсов</label>
                             <!-- Флажок -->
                             <input type="checkbox" name="steal-records" id="steal-records"/>
@@ -87,7 +102,7 @@
                             <input type="reset" value="Очистить форму" />
                         </span>
                     </div>
-                <!-- Конец формы -->
+                    <!-- Конец формы -->
                 </form>
             </div>
         </section>

@@ -1,26 +1,48 @@
 .simple-form {
-    border: 3px dashed brown;
-    float: left;
+    width: 350px;
+    background-color: antiquewhite;
 }
 
 .simple-title {
-    border: 3px solid green;
     padding-left: 3%;
+    margin: 2% auto;
+    color: brown;
+}
+
+.text-headline {
+    font-size: 26px;
+    font-weight: bold;
 }
 
 .input-field {
-    /*border: 3px solid brown;*/
     float: right;
 }
 
 .text-field {
-    border: 3px solid blueviolet;
+    /*border: 1px solid green;*/
     float: left;
+    /*margin-bottom: 15px;*/
 }
 
-.text-input-include-label-field {
-    border: 3px solid aquamarine;
+.text-description {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.universal-input-field {
+    /*border: 1px solid red;*/
     width: 100%;
-    /*float: left;*/
+    padding: 1% 0;
+    float: left;
+    clear: both;
+}
+
+.wild-input-field {
     clear: left;
+    width: 98%;
+    padding: 0 2% 0 0;
+}
+
+textarea {
+    width: 100%;
 }
