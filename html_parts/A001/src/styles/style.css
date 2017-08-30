@@ -80,7 +80,7 @@ article > p:last-child {
     text-align: justify;
 }
 
-footer > div:first-child iframe {
+footer iframe {
     width: 810px;
     height: 170px;
 
@@ -91,4 +91,33 @@ footer > div:first-child iframe {
 footer > div:last-child {
     padding-left: 5%;
 
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    display: inline;
+}
+
+.footer-center-allocation {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .footer-simple-block {
+    width: 90%;
+}
+
+footer .footer-text-field {
+    text-align: center;
+}
+
+footer .footer-links-list {
+    width: 20%;
+}
+
+footer .footer-iframe-block {
+    width: 70%;
 }
