@@ -25,9 +25,9 @@
                             </div>
                         </div>
                         <div class="universal-input-field">
-                            <span class="text-field text-description">
-                                <label for="surname">Ваша фамилия: </label>
-                            </span>
+                                <span class="text-field text-description">
+                                    <label for="surname">Ваша фамилия: </label>
+                                </span>
                             <!-- Текстовое поле -->
                             <div class="input-field">
                                 <input id="surname" type="text" name="surname" title="ваша фамилия" value="Иванов" />
@@ -42,14 +42,14 @@
                             </div>
                             <!-- Радио кнопки -->
                             <div class="input-field">
-                                <span id="sex" title="ваш пол">
-                                  <input id="sex_man" type="radio" name="sex" value="man" />
-                                  <label for="sex_man">мужчина</label>
-                                  <input id="sex_woman" type="radio" name="sex" value="woman" />
-                                  <label for="sex_woman">женщина</label>
-                                  <input id="unknown" type="radio" name="sex" value="unknown" checked />
-                                  <label for="unknown">не скажу</label>
-                                </span>
+                                    <span id="sex" title="ваш пол">
+                                      <input id="sex_man" type="radio" name="sex" value="man" />
+                                      <label for="sex_man">мужчина</label>
+                                      <input id="sex_woman" type="radio" name="sex" value="woman" />
+                                      <label for="sex_woman">женщина</label>
+                                      <input id="unknown" type="radio" name="sex" value="unknown" checked />
+                                      <label for="unknown">не скажу</label>
+                                    </span>
                             </div>
                         </div>
                         <div class="universal-input-field">
@@ -82,25 +82,29 @@
                             </div>
                             <!-- Текст -->
                             <div class="input-field wild-input-field">
-                            <textarea id="about-me" title="о себе" name="about-me"
-                                      cols="25" rows="5" maxlength="255">Напишите коротко о себе</textarea>
+                                <textarea id="about-me" title="о себе" name="about-me"
+                                          cols="25" rows="5" maxlength="255">Напишите коротко о себе</textarea>
                             </div>
                         </div>
                         <div class="universal-input-field">
-                            <label for="steal-records">Я не буду воровать записи курсов</label>
-                            <!-- Флажок -->
-                            <input type="checkbox" name="steal-records" id="steal-records"/>
+                            <div class="text-field text-description">
+                                <label for="steal-records">Я не буду воровать записи курсов</label>
+                            </div>
+                            <div class="input-field">
+                                <!-- Флажок -->
+                                <input type="checkbox" name="steal-records" id="steal-records"/>
+                            </div>
                         </div>
                     </fieldset>
-                    <div>
-                        <span>
+                    <div class="universal-input-field">
+                        <div class="input-field">
                             <!-- Кнопка для отправки формы -->
                             <input type="submit" value="Послать отзыв" />
-                        </span>
-                        <span>
+                        </div>
+                        <div class="input-field">
                             <!-- Кнопка для очистки формы -->
                             <input type="reset" value="Очистить форму" />
-                        </span>
+                        </div>
                     </div>
                     <!-- Конец формы -->
                 </form>
