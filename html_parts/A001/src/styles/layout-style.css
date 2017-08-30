@@ -1,0 +1,28 @@
+/* layout-style.css */
+/*        ideal approach is                 */
+/*      * {  margin: 0;  padding: 0;  }     */
+body {
+    margin: 0;  padding: 0;
+    color: #000000; background: #FFFFFF;
+    font-family: Arial, sans-serif;
+    border-top: 2px solid black;
+}
+
+header {
+    height: 3em;
+    border-bottom: 1px dotted black;
+    border-top: 1px solid black;
+}
+
+header span {
+    /*процент отсчитывается от размера текущего шрифта*/
+    font: 120% Georgia, serif;
+    color: black;
+    float: right;
+    margin-right: 2em;
+    margin-top: 0.6em;
+}
+
+header image {
+    
+}
