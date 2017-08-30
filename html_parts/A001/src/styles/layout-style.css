@@ -23,6 +23,32 @@ header span {
     margin-top: 0.6em;
 }
 
-header image {
-    
+header img {
+    margin-top: 0.6em;
+    margin-left: 1.5em;
+}
+
+nav {
+    background: yellow;
+
+    float: left;
+    margin-top: 2em;
+    margin-left: 1em;
+    width: 14em;
+}
+
+nav ul {
+    list-style-type: none;
+    background: silver;
+    padding-left: 0;
+    margin-left: 1em;
+}
+
+nav li {
+    background: white;
+    font-size: 80%;
+}
+
+section {
+    display: none;
 }
