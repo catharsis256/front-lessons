@@ -1,7 +1,12 @@
-@media screen {
+@media print {
     * {
-        background: cornsilk;
-        color: darkslateblue;
+        background: white;
+        color: black;
+    }
+
+    body > div {
+        width: 800px;
+        margin-left: 14em;
     }
 
     section, article {
@@ -12,12 +17,18 @@
         width: 468px;
         margin-left: auto;
         margin-right: auto;
+        /*display: none;*/
+    }
+
+    aside {
+        display: none;
     }
 
     header img {
         position: absolute;
         top: 0;
         left: 0;
+        display: none;
     }
 
     header h1, header h3 {
@@ -27,6 +38,10 @@
 
     header > h1 {
         text-decoration: overline underline;
+    }
+
+    nav {
+        display: none;
     }
 
     nav a:link {
@@ -108,7 +123,7 @@
     }
 
     footer .footer-simple-block {
-        width: 90%;
+        width: 100%;
     }
 
     footer .footer-text-field {
@@ -116,10 +131,12 @@
     }
 
     footer .footer-links-list {
-        width: 20%;
+        width: 30em;
+        margin-left:  15em;
     }
 
     footer .footer-iframe-block {
         width: 70%;
+        margin-right: 15em;
     }
 }
