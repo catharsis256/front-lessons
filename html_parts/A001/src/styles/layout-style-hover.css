@@ -1,0 +1,80 @@
+/* layout-style.css */
+/*        ideal approach is                 */
+/*      * {  margin: 0;  padding: 0;  }     */
+body {
+    margin: 0;  padding: 0;
+    color: #000000; background: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    border-top: 2px solid black;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 3em;
+    border-bottom: 1px dotted black;
+    border-top: 1px solid black;
+}
+
+header span {
+    /*процент отсчитывается от размера текущего шрифта*/
+    font: 120% Georgia, serif;
+    color: black;
+    float: right;
+    margin-right: 2em;
+    margin-top: 0.6em;
+}
+
+header img {
+    margin-top: 0.5em;
+    margin-left: 1.5em;
+}
+
+nav {
+    float: left;
+    margin-top: 2em;
+    margin-left: 1em;
+    width: 14em;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 1em;
+}
+
+nav li {
+    font-size: 80%;
+    border-bottom: 1px dotted black;
+    margin-bottom: 0.3em;
+}
+
+nav h2 {
+    font: 110% Georgia, serif;
+    color: black;
+    border-bottom: 1px dotted black;
+}
+
+section {
+    /*display: none;*/
+    margin-left: 16em;
+    margin-right: 2em;
+}
+
+section h1 {
+    font: 150% Georgia, serif;
+}
+
+section p {
+    font-size: 80%;
+    padding-left: 1.2em;
+    line-height: 1.6em;
+}
