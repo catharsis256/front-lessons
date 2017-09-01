@@ -1,0 +1,16 @@
+@media screen {
+    * {
+        margin: 0;  padding: 0;
+        color: #000000; background: #FFFFFF;
+        font-family: Arial, sans-serif;
+    }
+    section h1 {
+        font: 160% bold Georgia, serif;
+        text-align: center;
+    }
+    section video {
+        display: block;
+        margin: 0 auto;
+        border: 0.01em solid black;
+    }
+}
